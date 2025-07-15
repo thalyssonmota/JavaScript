@@ -42,14 +42,18 @@ if (idade >= 18) {
 const altura = 4.70;
 const largura = 10.78;
 
+// const taxa adicional deve ser de 20% sobre o valor da pintura se a area for maior que 10 metros quadrados
+
 const areaParede = altura * largura;
 const precoPorMetro = 10;
-const taxaAdicional = 0.2;
+const taxaAdicional = 1.20;
 
 const valorPintura = areaParede * precoPorMetro;
 
+// const taxa vai ter um valor de 20% sobre o valor da pintura se a area for maior que 10 metros quadrados
+
 if (areaParede > 10) {
-  const taxa = areaParede * (precoPorMetro * taxaAdicional);
+  const taxa = valorPintura * taxaAdicional;
   console.log(`O valor total da pintura é: R$ ${taxa.toFixed(2)} reais.`);
 } else {
 console.log(`O valor total da pintura é: R$ ${valorPintura.toFixed(2)} reais.`);
